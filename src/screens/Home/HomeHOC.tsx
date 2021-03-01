@@ -16,7 +16,7 @@ const HomeHOC = (Com: React.ComponentType<any>) => {
 
         const onRefresh = useCallback(() => {
             setRefreshing(true);
-            fetchNews().then((data) =>{console.log('asvasv',data); setRefreshing(false)});
+            fetchNews().then((data) =>{setRefreshing(false)});
         }, []);
 
 
