@@ -35,7 +35,8 @@ const styles = () => {
             padding: 12
         },
         locale: {
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            color:colors.text
         }
     })
 }
