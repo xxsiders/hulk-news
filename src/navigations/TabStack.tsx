@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
     const { colors } = useTheme()
-    return <Tab.Navigator tabBarOptions={{ tabStyle: { backgroundColor: colors.background } }}>
+    return <Tab.Navigator tabBarOptions={{ tabStyle: { backgroundColor: colors.background }, style: { backgroundColor: colors.background } }}>
         <Tab.Screen options={{
             tabBarIcon: ({ color }) => <Feather name='home' size={16} color={color} />,
             title: strings('home')
