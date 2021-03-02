@@ -10,7 +10,7 @@ const SearchHOC = (Com: React.ComponentType<any>) => {
         const { fetchNews, data, loading } = SearchProvider()
         const { params }: any = useRoute()
         useEffect(() => {
-            if (params.query) {
+            if (params != undefined) {
                 setquery(params.query)
                 fetchNews(params.query)
             }
